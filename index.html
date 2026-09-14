@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <meta name="description" content="MK Soluciones - Seguridad electrónica, electricidad, redes, soporte técnico y creación de sitios web en Costa Rica.">
 
     <title>MK Soluciones | Seguridad, Electricidad, Redes y Tecnología</title>
+
 
     <style>
 
@@ -255,9 +257,7 @@
 
         .servicios-grid {
             display: grid;
-
             grid-template-columns: repeat(4, 1fr);
-
             gap: 22px;
         }
 
@@ -333,9 +333,7 @@
 
         .razones-grid {
             display: grid;
-
             grid-template-columns: repeat(4, 1fr);
-
             gap: 22px;
         }
 
@@ -375,9 +373,7 @@
 
         .pasos {
             display: grid;
-
             grid-template-columns: repeat(4, 1fr);
-
             gap: 25px;
         }
 
@@ -461,9 +457,7 @@
 
         .contacto-grid {
             display: grid;
-
             grid-template-columns: repeat(3, 1fr);
-
             gap: 25px;
         }
 
@@ -517,6 +511,53 @@
         footer p {
             margin: 5px 0;
             font-size: 14px;
+        }
+
+
+        /* =========================
+           WHATSAPP FLOTANTE
+        ========================== */
+
+        .whatsapp-flotante {
+            position: fixed;
+
+            right: 22px;
+            bottom: 22px;
+
+            background: #25D366;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            padding: 13px 20px;
+
+            border-radius: 50px;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            text-decoration: none;
+
+            box-shadow: 0 5px 18px rgba(0,0,0,0.30);
+
+            z-index: 9999;
+
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-flotante:hover {
+            transform: scale(1.06);
+            background: #1ebe5d;
+        }
+
+        .whatsapp-icon {
+            font-size: 25px;
+        }
+
+        .whatsapp-texto {
+            font-size: 15px;
         }
 
 
@@ -670,7 +711,6 @@
 
             .servicios-grid {
                 grid-template-columns: 1fr;
-
                 gap: 18px;
             }
 
@@ -683,7 +723,6 @@
 
             .razones-grid {
                 grid-template-columns: 1fr;
-
                 gap: 18px;
             }
 
@@ -692,7 +731,6 @@
 
             .pasos {
                 grid-template-columns: 1fr;
-
                 gap: 18px;
             }
 
@@ -712,7 +750,6 @@
 
             .contacto-grid {
                 grid-template-columns: 1fr;
-
                 gap: 18px;
             }
 
@@ -727,9 +764,36 @@
                 padding: 25px 15px;
             }
 
+
+            /* WHATSAPP FLOTANTE */
+
+            .whatsapp-flotante {
+
+                width: 58px;
+                height: 58px;
+
+                right: 16px;
+                bottom: 16px;
+
+                padding: 0;
+
+                border-radius: 50%;
+
+                justify-content: center;
+            }
+
+            .whatsapp-icon {
+                font-size: 28px;
+            }
+
+            .whatsapp-texto {
+                display: none;
+            }
+
         }
 
     </style>
+
 </head>
 
 
@@ -752,7 +816,9 @@
                 class="menu-boton"
                 onclick="abrirMenu()"
                 aria-label="Abrir menú">
+
                 ☰
+
             </button>
 
             <div class="menu-enlaces" id="menuEnlaces">
@@ -893,8 +959,6 @@
             <div class="servicios-grid">
 
 
-                <!-- SERVICIO 1 -->
-
                 <div class="servicio">
 
                     <div class="servicio-icono">
@@ -922,8 +986,6 @@
                 </div>
 
 
-
-                <!-- SERVICIO 2 -->
 
                 <div class="servicio">
 
@@ -953,8 +1015,6 @@
 
 
 
-                <!-- SERVICIO 3 -->
-
                 <div class="servicio">
 
                     <div class="servicio-icono">
@@ -982,8 +1042,6 @@
                 </div>
 
 
-
-                <!-- SERVICIO 4 -->
 
                 <div class="servicio">
 
@@ -1014,8 +1072,6 @@
 
 
 
-                <!-- SERVICIO 5 -->
-
                 <div class="servicio">
 
                     <div class="servicio-icono">
@@ -1043,8 +1099,6 @@
                 </div>
 
 
-
-                <!-- SERVICIO 6 -->
 
                 <div class="servicio">
 
@@ -1074,8 +1128,6 @@
 
 
 
-                <!-- SERVICIO 7 -->
-
                 <div class="servicio">
 
                     <div class="servicio-icono">
@@ -1103,8 +1155,6 @@
                 </div>
 
 
-
-                <!-- SERVICIO 8 -->
 
                 <div class="servicio">
 
@@ -1471,6 +1521,26 @@
         </div>
 
     </section>
+
+
+
+    <!-- =========================
+         BOTÓN WHATSAPP FLOTANTE
+    ========================== -->
+
+    <a
+        href="https://wa.me/50689800819?text=Hola%20MK%20Soluciones,%20me%20gustaría%20solicitar%20información%20sobre%20sus%20servicios."
+        class="whatsapp-flotante"
+        target="_blank"
+        aria-label="Contactar por WhatsApp">
+
+        <span class="whatsapp-icon">💬</span>
+
+        <span class="whatsapp-texto">
+            WhatsApp
+        </span>
+
+    </a>
 
 
 
